@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All PDFs</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-8">
+    <h1 class="text-2xl font-bold mb-4">Generated PDFs</h1>
+    <div class="space-y-2">
+    <% files.forEach(file => { %>
+        <a href="/pdfs/<%= file %>" 
+           class="block p-3 bg-white rounded shadow hover:bg-gray-50">
+            <%= file %>
+        </a>
+    <% }) %>
+    </div>
+</body>
+</html>

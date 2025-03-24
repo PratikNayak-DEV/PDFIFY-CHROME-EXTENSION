@@ -1,0 +1,19 @@
+{
+  "name": "text-to-pdf-backend",
+  "version": "1.0.0",
+  "description": "This is a simple Chrome extension that allows users to convert web pages to PDF files. It supports converting the visible page or the full page and lets users customize settings like font size and layout.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Pratik Nayak",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "pdfkit": "^0.16.0"
+  }
+}
