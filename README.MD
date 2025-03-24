@@ -26,7 +26,7 @@ This is a simple Chrome extension that allows users to convert web pages to PDF 
 ## Setup & Installation
 1. Clone this repository:
    ```sh
-   git clone https://github.com/your-repo-name.git
+   git clone https://github.com/PratikNayak-DEV/PDFIFY-CHROME-EXTENSION.git
    ```
 2. Open Chrome and go to `chrome://extensions/`.
 3. Enable **Developer Mode**.
