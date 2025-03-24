@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const PDFDocument = require("pdfkit");
@@ -6,6 +7,8 @@ const fs = require("fs");
 const path = require('path');
 const crypto = require("crypto");
 const rateLimit = require("express-rate-limit");
+const PORT = process.env.PORT;
+
 
 const app = express();
 
@@ -19,7 +22,6 @@ app.use("/api/", limiter);
 //
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-const PORT = 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
